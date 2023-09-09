@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-class MazeSolverRunner{
+public class MazeSolverRunner {
     public static void main(String[] args) {
-        
+
         Scanner in = new Scanner(System.in);
         boolean mazeGenerated = false;
         MazeGenerator mazeGenerator = new MazeGenerator();
@@ -51,7 +51,6 @@ class MazeSolverRunner{
 
                 default:
                     System.out.println("Invalid option. Please select a valid option.");
-                
             }
 
             System.out.println();

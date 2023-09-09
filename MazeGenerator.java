@@ -2,14 +2,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-class MazeGenarator{
+
+class MazeGenerator{
     public int coloum;
     public int row;
     public int startI;
     public int startJ;
     public char[][] maze;
 
-    public MazeGenarator(){
+    public MazeGenerator(){
         coloum = 0 ;
         row = 0 ;
     }

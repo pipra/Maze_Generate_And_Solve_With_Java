@@ -15,7 +15,18 @@ class MazeSolverRunner{
             int response = in.nextInt();
 
             switch (response) {
-                
+                case 1:
+                    System.out.print("Enter the width of the maze: ");
+                    int width = in.nextInt();
+                    System.out.print("Enter the height of the maze: ");
+                    int height = in.nextInt();
+
+                    mazeGenerator.generateMaze();
+                    mazeGenerated = true;
+
+                    System.out.println("\nMaze generated:");
+                    mazeGenerator.printMaze();
+                    break;
             }
 
             System.out.println();

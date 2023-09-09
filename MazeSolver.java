@@ -1,3 +1,3 @@
-public class MazeSolver {
+class MazeSolver{
     
 }

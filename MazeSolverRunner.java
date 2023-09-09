@@ -40,6 +40,14 @@ class MazeSolverRunner{
                         mazeGenerator.printMaze();
                     }
                     break;
+
+                case 3:
+                    System.out.println("Thank you for using the Maze Solver!");
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Invalid option. Please select a valid option.");
                 
             }
 

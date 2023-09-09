@@ -9,6 +9,11 @@ class MazeGenarator{
     public int startJ;
     public char[][] maze;
 
+    public MazeGenarator(){
+        coloum = 0 ;
+        row = 0 ;
+    }
+
     public void generateMaze() {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < coloum; j++) {
@@ -52,6 +57,12 @@ class MazeGenarator{
         int endX = random.nextInt(coloum);
         int endY = random.nextInt(row);
         maze[endY][endX] = 'E';
+    }
+
+    public void solveMaze() {
+        MazeSolver mazeSolver = new MazeSolver();
+        mazeSolver.solve( maze , startI , startJ );
+        maze[startI][startJ] = 'S' ;
     }
 
 

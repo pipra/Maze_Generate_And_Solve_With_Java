@@ -41,10 +41,6 @@ class MazeSolverRunner{
                     }
                     break;
                 
-                case 3:
-                    System.out.println("Thank you for using the Maze Solver!");
-                    System.exit(0);
-                    break;
             }
 
             System.out.println();

@@ -24,6 +24,9 @@ class MazeSolverRunner{
                     System.out.print("Enter the height of the maze: ");
                     int height = in.nextInt();
 
+                    mazeGenerator.setHeight(height);
+                    mazeGenerator.setWidth(width);
+                    mazeGenerator.initializeMaze();
                     mazeGenerator.generateMaze();
                     mazeGenerated = true;
 

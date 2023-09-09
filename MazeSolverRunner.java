@@ -3,6 +3,8 @@ import java.util.Scanner;
 class MazeSolverRunner{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        boolean mazeGenerated = false;
+        MazeGenerator mazeGenerator = new MazeGenerator();
         System.out.println("Welcome to the Maze Solver!");
         
         while (true) {
@@ -26,6 +28,16 @@ class MazeSolverRunner{
 
                     System.out.println("\nMaze generated:");
                     mazeGenerator.printMaze();
+                    break;
+
+                    case 2:
+                    if (!mazeGenerated) {
+                        System.out.println("Please generate a maze first!");
+                    } else {
+                        mazeGenerator.solveMaze();
+                        System.out.println("Solving maze...\n");
+                        mazeGenerator.printMaze();
+                    }
                     break;
             }
 

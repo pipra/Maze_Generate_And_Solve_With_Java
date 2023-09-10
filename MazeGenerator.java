@@ -15,6 +15,18 @@ class MazeGenerator{
         row = 0 ;
     }
 
+    public void setWidth( int width ){
+        this.coloum = width ;
+    }
+
+    public void setHeight( int height ){
+        this.row = height ;
+    }
+
+    public void initializeMaze(){
+        maze = new char[row][coloum] ;
+    }
+
     public void generateMaze() {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < coloum; j++) {
@@ -66,5 +78,13 @@ class MazeGenerator{
         maze[startI][startJ] = 'S' ;
     }
 
+    public void printMaze() {
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < coloum; j++) {
+                System.out.print(maze[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 
 }
